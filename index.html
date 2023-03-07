@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function (){
+                $("#reg").click(function(){
+                    $("#toggle").toggle();
+                });
+            });
+
+            $(document).ready(function (){
+                $("#login").click(function (){
+                    $("#log").toggle();
+                });
+            });
+
+            </script>
+            
+</head>
+
+<body style="background: #ffffff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+    <button type="button" id="login" style="margin-left: 600px;margin-top: 50px;">Login</button>
+    <button type="button" id="reg" >Registration</button>
+    
+<div id="toggle" style="background-color: rgb(255, 255, 255);margin: 50px;border: 5px rgb(255, 255, 255) solid;display:none">
+    <form class="row g-3 needs-validation" novalidate>
+        
+        <div class="col-md-4">
+           
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01"  required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+</div>
+<div id="log" style="background-color: rgb(255, 255, 255); margin: 50px;display: none;">
+   
+    <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password"  id="inputPassword">
+        </div>
+      </div>
+</div>
+<BR>
+    <BR>
+<div class="road">
+    <img style="height: 50px;width: 40px;" src="car1.png" class="car car1">
+    <img style="height: 50px;width: 40px;" src="car2.png" class="car car2">
+    <img style="height: 50px;width: 40px;" src="car3.png" class="car car3">
+    <img style="height: 50px;width: 40px;" src="car4.png" class="car car4">
+    <img style="height: 50px;width: 40px;" src="car5.png" class="car car5">
+  </div>
+<style>
+    .road {
+  width: 100%;
+  height: 100px;
+  background-color: #444;
+  position: relative;
+}
+
+.car {
+  width: 50px;
+  height: 30px;
+  
+  position: absolute;
+  bottom: 0;
+}
+
+.car1 {
+  left: 5%;
+}
+
+.car2 {
+  left: 25%;
+}
+
+.car3 {
+  left: 45%;
+}
+
+.car4 {
+  left: 65%;
+}
+
+.car5 {
+  left: 85%;
+}
+
+</style> 
+<script>
+    $(document).ready(function() {
+  var roadWidth = $('.road').width();
+  var carWidth = $('.car').width();
+  var cars = $('.car');
+  var numCars = cars.length;
+  var carSpeeds = [2, 3, 4, 5, 6];
+  function moveCar(car) {
+    var carIndex = cars.index(car);
+    var carSpeed = carSpeeds[carIndex];
+    
+    car.animate({left: roadWidth-carWidth}, carSpeed*1000, 'linear', function() {
+      car.css('left', '0');
+      moveCar(car);
+    });
+  }
+  
+  cars.each(function() {
+    moveCar($(this));
+  });
+});
+
+</script>
+<BR>
+    <BR>
+
+<button type="button" id="bgimg">BACKGROUND</button>
+
+<script>
+    $(document).ready(function(){
+                $("#bgimg").click(function(){
+                 $("body")
+                    .css({"background-image":"url(car3.png)"})
+                });
+            });
+            $(document).ready(function(){
+                $("#take").hover(function(){
+                    $(this).animate({'zoom':1.2},400);
+                    $(this).css("background-color","red");
+                });
+                });
+</script>
+<BR>
+    <BR>
+<div class="box">
+    <h2>HOVER</h2>
+    <p>ZOOM</p>
+  </div>
+<style>
+    .box {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box h2 {
+  font-size: 24px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.box:hover h2 {
+  font-size: 28px;
+}
+
+.box p {
+  font-size: 16px;
+  color: #ff0000;
+  transition: all 0.3s ease;
+}
+
+
+
+</style> 
+<script>
+    $(document).ready(function() {
+  $('.box').hover(function() {
+    $(this).children('h2').css('color', '#f00');
+    $(this).children('p').css('color', '#f00');
+  }, function() {
+    $(this).children('h2').css('color', '#333');
+    $(this).children('p').css('color', '#666');
+  });
+});
+
+</script>
+</body>
+
+</html>
